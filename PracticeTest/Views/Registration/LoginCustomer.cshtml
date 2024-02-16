@@ -1,0 +1,55 @@
+﻿@model PracticeTest.Models.CustomerRegistration
+
+<p>
+    <a asp-action="Index" class="btn btn-primary">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.Name)
+                </td>
+                <td>
+                @Html.DisplayFor(modelItem => Model.Email)
+                </td>
+                <td>
+                @Html.DisplayFor(modelItem => Model.Password)
+                </td>
+                <td>
+                @Html.DisplayFor(modelItem => Model.PhoneNumber)
+                </td>
+                <td>
+                @Html.DisplayFor(modelItem => Model.Address)
+                </td>
+              
+            </tr>
+        
+    </tbody>
+</table>
